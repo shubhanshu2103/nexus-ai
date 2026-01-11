@@ -36,7 +36,7 @@ function App() {
     try {
       // Connects to your FastAPI /research endpoint
       // Send chat history along with the new query
-      const response = await axios.post('http://localhost:8000/research', {
+      const response = await axios.post('https://nexus-ai-2d1h.onrender.com/research', {
         query: userMessage.content,
         chat_history: messages
       });
