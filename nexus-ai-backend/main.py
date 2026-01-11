@@ -25,10 +25,10 @@ app.add_middleware(
 
 
 llm = LLM(
-    model="groq/llama-3.3-70b-versatile", 
+    model="groq/llama-3.1-8b-instant", 
     api_key=os.getenv("GROQ_API_KEY"),
     temperature=0
-)                                           #Using llama-3.3-70b because it's powerful and currently free on Groq
+)                                           #Using llama-3.1-8b-instant because it's powerful and currently free on Groq
 
 
 search_tool = DuckDuckGoSearchRun()
@@ -39,6 +39,7 @@ researcher= Agent(
     and synthesizing it for technical teams. You have 10 years of experience 
     in market research and solutions development.""",
     tool=[search_tool],
+    max_iter=3,
     function_calling_llm=llm,
     llm=llm,
     verbose=True,
