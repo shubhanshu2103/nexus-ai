@@ -17,7 +17,7 @@ app=FastAPI(title="Nexus-ai Backend")
 # Enable CORS for your React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173","https://nexus-ai-frontend-z75f.onrender.com/"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
