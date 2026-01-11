@@ -37,7 +37,7 @@ researcher= Agent(
     goal="uncover cutting-edge developments in {topic}",
     backstory="""You are an expert at finding the most relevant information 
     and synthesizing it for technical teams. You have 10 years of experience 
-     in market research and AI trends.""",
+    in market research and solutions development.""",
     tool=[search_tool],
     function_calling_llm=llm,
     llm=llm,
@@ -48,8 +48,8 @@ researcher= Agent(
 
 writer = Agent(
   role='Technical Content Strategist',
-  goal='Craft a professional technical brief about {topic}',
-  backstory="""You are a world-class technical writer who takes complex 
+  goal='Craft a professional friendly knowledge brief about {topic}',
+  backstory="""You are a world-class writer who takes complex 
   research and makes it easy to understand for developers. You specialize 
   in high-level executive summaries.""",
   llm=llm,
