@@ -34,7 +34,7 @@ llm = LLM(
 search_tool = DuckDuckGoSearchRun()
 researcher= Agent(
     role="Senior Research Analyst",
-    goal="uncover cutting-edge developments in {topic}",
+    goal="uncover every information and leatest trend in {topic}",
     backstory="""You are an expert at finding the most relevant information 
     and synthesizing it for technical teams. You have 10 years of experience 
     in market research and solutions development.""",
